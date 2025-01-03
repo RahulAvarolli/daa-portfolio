@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: #111111;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .circle {
+	    position: absolute;
+        border: solid 1px #ccc;
+	    width: 10px; 
+	    height: 10px; 
+        border-radius: 50%; 
+        background-color: #ccc; 
+        }
+
+        .navbar {
+            margin-bottom: 4rem;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+        }
+
+        .section {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .profile-header {
+            margin-bottom: 4rem;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: filter 0.3s ease;
+        }
+
+        .profile-header h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-header p {
+            color: #888888;
+            font-size: 1rem;
+        }
+
+        .profile-details {
+            display: grid;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .detail-card {
+            border-top: 1px solid #333333;
+            padding-top: 1.5rem;
+        }
+
+        .detail-card h2 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #888888;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-card ul {
+            list-style: none;
+        }
+
+        .detail-card li {
+            margin-bottom: 0.75rem;
+        }
+
+        .education-info h3 {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-info p {
+            color: #888888;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .social-link {
+            color: #ffffff;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-link:hover {
+            opacity: 1;
+        }
+
+        .reflection-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            background-color: #333333;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .reflection-button:hover {
+            background-color: #555555;
+            transform: scale(1.1);
+        }
+
+        @media (min-width: 768px) {
+            .profile-details {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .navbar {
+                margin-bottom: 2rem;
+            }
+            
+            .profile-header {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span id="circle" class="circle"></span>
+    <nav class="navbar">
+        <a href="index1.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+            <span>Business Case</span>
+        </a>
+    </nav>
+    <main>
+        <section id="profile" class="section">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="assets/WhatsApp Image 2025-01-01 at 23.34.58_54f49279.jpg">
+                </div>
+                <h1>Rahul Avarolli</h1>
+                <p>CSE Student</p>
+            </div>
+            <div class="profile-details">
+                <div class="detail-card">
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                        Basic Details
+                    </h2>
+                    <ul>
+                        <li><strong>USN:</strong> 01FE23BCS159</li>
+                        <li><strong>Roll No:</strong> 237</li>
+                        <li><strong>Email:</strong> 01fe23bcs159@kletech.ac.in</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        Education
+                    </h2>
+                    <div class="education-info">
+                        <h3>Bachelor of Engineering</h3>
+                        <p>Computer Science</p>
+                        <p>KLE Technological University</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Shivanand-hulikatti" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/shivanand-hulikatti-260174296" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+            </div>
+            <a href="reflection.html" class="reflection-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                <span>View Learning Reflection</span>
+            </a>
+        </section>
+    </main>
+    <script>
+        jQuery(document).ready(function() {
+
+        var mouseX = 0, mouseY = 0;
+        var xp = 0, yp = 0;
+        
+        $(document).mousemove(function(e){
+        mouseX = e.pageX - 30;
+        mouseY = e.pageY - 30; 
+        });
+        
+        setInterval(function(){
+        xp += ((mouseX - xp)/6);
+        yp += ((mouseY - yp)/6);
+        $("#circle").css({left: xp +'px', top: yp +'px'});
+        }, 20);
+
+        });
+    </script>
+</body>
+</html>

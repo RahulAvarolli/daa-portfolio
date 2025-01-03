@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #bb86fc;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        p, ul, ol {
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 1px solid #555;
+        }
+        table, th, td {
+            border: 1px solid #555;
+            color: #e0e0e0;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #424242;
+            color: #bb86fc;
+        }
+        a {
+            color: #03dac6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Q&A Content</h1>
+
+    <h2>1. What are the kinds of problems we see in nature? (iteration, recursion, backtracking)</h2>
+    <p>We see iteration in cell division, animal migration, population growth, and the water cycle.</p>
+    <p>Recursion is observed in Fibonacci patterns, tree branching, DNA replication, and food chains.</p>
+    <p>Backtracking is seen in animal foraging, trial-and-error learning, the immune system, and plant growth adjustment.</p>
+
+    <h2>2. What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth</h2>
+    <p>Time efficiency is about how quickly an algorithm runs, measured by the number of operations. Space efficiency is about how much memory an algorithm needs.</p>
+    <h3>Orders of Growth:</h3>
+    <ul>
+        <li>O(1) – Constant Time</li>
+        <li>O(log n) – Logarithmic Time</li>
+        <li>O(n) – Linear Time</li>
+        <li>O(n log n) – Linearithmic Time</li>
+        <li>O(n²) – Quadratic Time</li>
+        <li>O(2^n) – Exponential Time</li>
+        <li>O(n!) – Factorial Time</li>
+    </ul>
+    <p>Understanding these is key to building fast and scalable software.</p>
+
+    <h2>3. Design Principles from Chapter 2</h2>
+    <ul>
+        <li><strong>Decomposition:</strong> Break down complex problems.</li>
+        <li><strong>Pattern Recognition:</strong> Spot repeating patterns.</li>
+        <li><strong>Abstraction:</strong> Focus on essential features.</li>
+        <li><strong>Brave/Cautious Travel:</strong> DFS vs. BFS.</li>
+        <li><strong>Pruning:</strong> Eliminate irrelevant parts.</li>
+        <li><strong>Lazy Propagation:</strong> Delay updates.</li>
+        <li><strong>Sliding Window:</strong> Analyze overlapping sub-arrays.</li>
+        <li><strong>Level Order Traversal:</strong> Explore trees level by level.</li>
+        <li><strong>Hierarchical Data:</strong> Parent-child relationships.</li>
+        <li><strong>Edge Relaxation:</strong> Update shortest distances.</li>
+        <li><strong>Balancing/Rotations:</strong> Keep trees balanced.</li>
+        <li><strong>Kleene Closure:</strong> Find all connected paths.</li>
+        <li><strong>Pre-Computing:</strong> Store results to avoid recalculations.</li>
+        <li><strong>Parental Dominance:</strong> Parent-child value relationships.</li>
+        <li><strong>Prefix/Suffix:</strong> Substrings at the beginning/end.</li>
+        <li><strong>Partitioning:</strong> Break problems into sub-problems.</li>
+        <li><strong>Bit Manipulations:</strong> Use bitwise operations.</li>
+        <li><strong>Memoization:</strong> Store function results.</li>
+    </ul>
+
+    <h2>4. Hierarchical Data and Tree Data Structures</h2>
+    <p>Different tree types optimize hierarchical data handling:</p>
+    <ul>
+        <li><strong>Tree:</strong> Basic hierarchical representation.</li>
+        <li><strong>Binary Tree:</strong> Up to two children per node.</li>
+        <li><strong>Binary Search Tree (BST):</strong> Sorted data for faster searches.</li>
+        <li><strong>2-3 Tree:</strong> Self-balancing, 2 or 3 children per node.</li>
+        <li><strong>AVL Tree:</strong> Strictly balanced using rotations.</li>
+        <li><strong>Red-Black Tree:</strong> Balanced using color-coding.</li>
+        <li><strong>Heap:</strong> Prioritizes elements (max/min heap).</li>
+        <li><strong>Trie:</strong> Efficient for string/prefix searches.</li>
+    </ul>
+
+    <h2>5. Array Query Algorithms</h2>
+    <p>Essential for efficient data access in large datasets.</p>
+    <ul>
+        <li><strong>Lookup Table (LUT):</strong> Precomputed values for O(1) access.</li>
+        <li><strong>Segment Tree:</strong> Fast range queries and updates (O(log n)).</li>
+        <li><strong>Sparse Table:</strong> Constant-time range queries after preprocessing.</li>
+        <li><strong>Fenwick Tree:</strong> Efficient prefix sum queries and updates (O(log n)).</li>
+    </ul>
+
+    <h2>6. Tree vs. Graph Traversals</h2>
+    <table>
+        <tr><th>Aspect</th><th>Tree</th><th>Graph</th></tr>
+        <tr><td>Structure</td><td>Hierarchical, no cycles</td><td>Nodes and edges, may have cycles</td></tr>
+        <tr><td>Connections</td><td>One parent (except root)</td><td>Multiple connections, cycles</td></tr>
+        <tr><td>Edges</td><td>Directed</td><td>Directed or undirected</td></tr>
+        <tr><td>Traversal</td><td>Hierarchical path</td><td>Explores all paths</td></tr>
+        <tr><td>Traversals</td><td>Preorder, Inorder, Postorder, Level-order</td><td>DFS, BFS</td></tr>
+        <tr><td>Applications</td><td>File systems, BSTs</td><td>Social networks, routing</td></tr>
+    </table>
+    <h3>Tree Traversals:</h3>
+    <table>
+        <tr><th>Traversal</th><th>Description</th><th>Application</th></tr>
+        <tr><td>Preorder</td><td>Root, Left, Right</td><td>Expression evaluation</td></tr>
+        <tr><td>Inorder</td><td>Left, Root, Right</td><td>BST retrieval</td></tr>
+        <tr><td>Postorder</td><td>Left, Right, Root</td><td>Tree deletion</td></tr>
+        <tr><td>Level-order</td><td>Level by level</td><td>Shortest path</td></tr>
+    </table>
+    <h3>Graph Traversals:</h3>
+    <table>
+        <tr><th>Traversal</th><th>Description</th><th>Application</th></tr>
+        <tr><td>DFS</td><td>Deepest branch first</td><td>Maze solving</td></tr>
+        <tr><td>BFS</td><td>Level by level</td><td>Shortest path</td></tr>
+    </table>
+
+    <h2>7. Sorting and Searching Algorithms</h2>
+    <table>
+        <tr><th>Algorithm</th><th>Technique</th><th>Inspiration</th><th>Applications</th></tr>
+        <tr><td>Bubble Sort</td><td>Compares and swaps</td><td>Bubbling up</td><td>Small lists</td></tr>
+        <tr><td>Selection Sort</td><td>Selects smallest</td><td>Selecting best</td><td>Small datasets</td></tr>
+        <tr><td>Insertion Sort</td><td>Inserts into sorted</td><td>Inserting card</td><td>Nearly sorted data</td></tr>
+        <tr><td>Merge Sort</td><td>Divide and merge</td><td>Divide and conquer</td><td>Large datasets</td></tr>
+        <tr><td>Quick Sort</td><td>Partitions around pivot</td><td>Sorting cards</td><td>Large datasets</td></tr>
+        <tr><td>Heap Sort</td><td>Uses a heap</td><td>Priority queues</td><td>Task scheduling</td></tr>
+        <tr><td>Linear Search</td><td>Sequential check</td><td>Sequential search</td><td>Small/unsorted data</td></tr>
+        <tr><td>Binary Search</td><td>Halves search space</td><td>Dictionary search</td><td>Sorted data</td></tr>
+        <tr><td>Hashing</td><td>Hash function</td><td>Key lookups</td><td>Databases</td></tr>
+        <tr><td>Brute Force String Search</td><td>Compares substrings</td><td>Simple method</td><td>Simple string search</td></tr>
+        <tr><td>KMP</td><td>Partial matching</td><td>Prior information</td><td>Text search</td></tr>
+        <tr><td>Boyer-Moore</td><td>Uses heuristics</td><td>Skipping sections</td><td>Text editors</td></tr>
+        <tr><td>Rabin-Karp</td><td>Uses hashing</td><td>Hash matching</td><td>Plagiarism</td></tr>
+    </table>
+
+    <h2>8. Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+    <ul>
+        <li><strong>Spanning Trees:</strong> Connect all points with fewest edges.
+            <ul>
+                <li>Minimum Spanning Tree (MST): Prim's and Kruskal's algorithms.</li>
+            </ul>
+        </li>
+        <li><strong>Shortest Paths:</strong> Find the shortest path between nodes.
+            <ul>
+                <li>Dijkstra's Algorithm: Single-source shortest path.</li>
+                <li>Bellman-Ford Algorithm: Handles negative weights.</li>
+                <li>Floyd-Warshall Algorithm: All-pairs shortest paths.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

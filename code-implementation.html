@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Applications</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f9ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 0;
+            border-bottom: 4px solid #007BFF;
+        }
+
+        h2 {
+            color: #ffffff;
+            background-color: #007BFF;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #0056b3;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        p,
+        ul {
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            max-width: 1100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        strong {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: #ffffff;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p,
+            ul {
+                margin-left: 15px;
+                font-size: 0.9rem;
+            }
+
+            section {
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Algorithm Applications</h1>
+
+    <!-- Healthcare Sector -->
+    <section>
+        <h2>Healthcare Sector</h2>
+        <ul>
+            <li>
+                <h3>1. Optimal Ambulance Routing</h3>
+                <p><strong>Algorithm</strong>: Dijkstra’s Algorithm</p>
+                <p><strong>Application</strong>: Finds the shortest path from an accident site to the nearest hospital.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Dijkstra%E2%80%99s.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>2. Minimizing Medical Facility Connection Costs</h3>
+                <p><strong>Algorithm</strong>: Prim’s Algorithm</p>
+                <p><strong>Application</strong>: Constructs a minimum cost network to connect all hospitals in a region.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Prims.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>3. Evaluating Emergency Transport Time</h3>
+                <p><strong>Algorithm</strong>: Floyd-Warshall Algorithm</p>
+                <p><strong>Application</strong>: Computes the shortest transport time between every pair of hospitals.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Floyd_Warshall.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>4. Minimizing Infrastructure Costs</h3>
+                <p><strong>Algorithm</strong>: Kruskal’s Algorithm</p>
+                <p><strong>Application</strong>: Creates a minimum spanning tree to optimize the connectivity of medical centers.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/krushkals.cpp>Code Implementation</a>
+            </li>
+            <li>
+                <h3>5. Sorting Medical Records for Efficient Search</h3>
+                <p><strong>Algorithm</strong>: Quick Sort</p>
+                <p><strong>Application</strong>: Sorts patient records by various attributes (e.g., age, treatment date) to enable faster search and retrieval.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Quicksort.cpp">Code Implementation</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Agricultural Sector -->
+    <section>
+        <h2>Agricultural Sector</h2>
+        <ul>
+            <li>
+                <h3>1. Shortest Route for Delivering Fertilizers</h3>
+                <p><strong>Algorithm</strong>: Bellman-Ford Algorithm</p>
+                <p><strong>Application</strong>: Finds the shortest paths from a central warehouse to farms, handling negative weights like discounts on specific routes.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Bellaman_ford.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>2. Efficient Irrigation Network Design</h3>
+                <p><strong>Algorithm</strong>: Kruskal’s Algorithm</p>
+                <p><strong>Application</strong>: Constructs a minimum spanning tree to efficiently distribute water.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/krushkals.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>3. Mapping Communication Paths Between Farms</h3>
+                <p><strong>Algorithm</strong>: BFS (Breadth-First Search)</p>
+                <p><strong>Application</strong>: Explores and maps the shortest unweighted paths for communication between farm clusters.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Bfs.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>4. Optimizing Farm Connectivity Costs</h3>
+                <p><strong>Algorithm</strong>: Kruskal’s Algorithm</p>
+                <p><strong>Application</strong>: Minimizes the cost of building a network between farms while ensuring connectivity.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/krushkals.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>5. Sorting Crop Yields for Optimal Allocation</h3>
+                <p><strong>Algorithm</strong>: Heap Sort</p>
+                <p><strong>Application</strong>: Sorts crop yield data to allocate resources efficiently to farms with the highest need.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/heapsort.cpp">Code Implementation</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Marketing Sector -->
+    <section>
+        <h2>Marketing Sector</h2>
+        <ul>
+            <li>
+                <h3>1. Optimizing Network Connectivity for Campaigns</h3>
+                <p><strong>Algorithm</strong>: Kruskal’s Algorithm</p>
+                <p><strong>Application</strong>: Builds a minimum spanning tree to optimize connections between cities or regions for marketing campaigns.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/krushkals.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>2. Optimizing Campaign Reach Between Cities</h3>
+                <p><strong>Algorithm</strong>: Prim’s Algorithm</p>
+                <p><strong>Application</strong>: Builds a minimum cost network to maximize campaign reach.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Prims.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>3. Shortest Path to Deliver Marketing Material</h3>
+                <p><strong>Algorithm</strong>: Dijkstra’s Algorithm</p>
+                <p><strong>Application</strong>: Finds optimal delivery routes to minimize travel costs and time.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Dijkstra%E2%80%99s.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>4. Predicting Customer Sentiment Trends</h3>
+                <p><strong>Algorithm</strong>: Floyd-Warshall Algorithm</p>
+                <p><strong>Application</strong>: Analyzes and predicts shortest paths in customer interaction networks.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Floyd_Warshall.cpp">Code Implementation</a>
+            </li>
+            <li>
+                <h3>5. Sorting Customer Feedback by Sentiment</h3>
+                <p><strong>Algorithm</strong>: Quick Sort</p>
+                <p><strong>Application</strong>: Sorts customer feedback by sentiment scores to prioritize responses to positive or negative reviews.</p>
+                <a href="https://github.com/RahulAvarolli/daa-portfolio/blob/main/Quicksort.cpp">Code Implementation</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>🩵🩵</p>
+    </footer>
+
+</body>
+
+</html>
